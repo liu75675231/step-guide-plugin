@@ -1,0 +1,29 @@
+{
+  "name": "step-guide-plugin",
+  "version": "1.0.0",
+  "description": "单步调试的chrome插件",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "scripts": {
+    "dev": "cross-env PORT=8100 npm run dev:shell",
+    "dev:shell": "cd shells/dev && webpack-dev-server --port 10086 --inline --hot --no-info",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liu75675231/step-guide-plugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liu75675231/step-guide-plugin/issues"
+  },
+  "homepage": "https://github.com/liu75675231/step-guide-plugin#readme"
+}
