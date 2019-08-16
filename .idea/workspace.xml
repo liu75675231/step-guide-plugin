@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="3b328350-7e34-4701-a5c6-dd96170121e9" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo128.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo16.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo32.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo64.psd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shells/chrome/background.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shells/chrome/contentScript.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shells/chrome/images/logo128.png" afterDir="false" />
@@ -40,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shells/chrome/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="14" column="91" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
+            <state relative-caret-position="264">
+              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -222,16 +230,15 @@
       <workItem from="1565769372350" duration="1794000" />
       <workItem from="1565771297777" duration="4311000" />
       <workItem from="1565776958511" duration="38000" />
-      <workItem from="1565944370969" duration="4075000" />
+      <workItem from="1565944370969" duration="4359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10218000" />
+    <option name="totallyTimeSpent" value="10502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.312961" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -335,8 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shells/chrome/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="14" column="91" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
+        <state relative-caret-position="264">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
