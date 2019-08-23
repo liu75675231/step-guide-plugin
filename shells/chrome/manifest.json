@@ -2,7 +2,7 @@
   "name": "Step Guide",
   "version": "0.0.1",
   "description": "You can guide others to run a website step by step",
-  "permissions": ["activeTab", "contextMenus"],
+  "permissions": ["activeTab", "contextMenus", "tabs", "*://*/*"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
