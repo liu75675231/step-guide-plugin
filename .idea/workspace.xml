@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b328350-7e34-4701-a5c6-dd96170121e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/shells/chrome/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/shells/chrome/background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shells/chrome/contentScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/shells/chrome/contentScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shells/chrome/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shells/chrome/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shells/chrome/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/shells/chrome/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="3b328350-7e34-4701-a5c6-dd96170121e9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -249,11 +244,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49751000" />
+    <option name="totallyTimeSpent" value="50411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3125" />
       <window_info anchor="bottom" id="TODO" order="6" />
