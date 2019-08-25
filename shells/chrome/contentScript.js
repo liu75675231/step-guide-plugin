@@ -1,4 +1,40 @@
-function click(e) {
+var prevTarget = '';
+var prevTargetColor = '';
+var prev = {
+  target: undefined,
+  backgroundColor: '',
+};
+
+document.addEventListener('mousemove', function (event) {
+    var target = event.target;
+    if (target === prevTarget) {
+        return;
+    }
+
+    if (prev.target !== undefined) {
+        prev.target.style.backgroundColor = prev.backgroundColor;
+    }
+
+
+    var prevColor = target.style.backgroundColor;
+    prev = {
+      backgroundColor: target.style.backgroundColor,
+      target: target,
+    };
+    target.style.backgroundColor = '#ccc';
+});
+function createTemplate () {
+    return `
+        <div id="guide-plugin-popup">
+            <div>abcd</div>
+        </div>
+    `;
+}
+document.addEventListener('click', function (event) {
+   console.log(event);
+});
+
+/**function click(e) {
     console.log("set page color click");
     chrome.runtime.sendMessage(null, "aaa", function () {
         console.log('success');
@@ -11,3 +47,6 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
 //    document.body.style.backgroundColor = request.color;
     sendResponse({farewell: "goodbye1111"});
 });
+
+
+**/

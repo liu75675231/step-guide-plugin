@@ -1,3 +1,4 @@
+/**
 function click(e) {
     console.log("it is index js");
     chrome.runtime.sendMessage(null, "aaa", function () {
@@ -10,3 +11,4 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
 //    document.body.style.backgroundColor = request.color;
     sendResponse({farewell: "goodbye1111"});
 });
+**/
