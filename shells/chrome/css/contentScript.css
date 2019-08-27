@@ -1,0 +1,52 @@
+#guide-plugin-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999;
+}
+#guide-plugin-popup .guide-plugin-popup-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+#guide-plugin-popup .guide-plugin-popup-content {
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+#guide-plugin-popup .guide-plugin-popup-layout {
+    padding: 10px;
+    width: 100%;
+}
+#guide-plugin-popup .guide-plugin-popup-form-item {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+#guide-plugin-popup .guide-plugin-popup-form-label {
+    width: 40px;
+}
+#guide-plugin-popup .guide-plugin-popup-form-content {
+    width: 100%;
+}
+#guide-plugin-popup .guide-plugin-popup-input {
+    width: 100%;
+    border: solid 1px #000;
+    height: 20px;
+}
+#guide-plugin-popup .guide-plugin-popup-textarea {
+    width: 100%;
+    border: solid 1px #000;
+    height: 120px;
+    padding: 0px;
+}
