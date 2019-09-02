@@ -14,9 +14,15 @@ function addCss(fileName) {
     head.appendChild(link);
 }
 
-addCss(chrome.runtime.getURL("css/contentScript.css"));
-
-
+setTimeout(function () {
+    console.log('start running');
+    document.getElementById("hplogo").setAttribute("data-intro", "it is 啊");
+    document.getElementById("hplogo").setAttribute("data-step", "1");
+    document.getElementsByClassName("Fx4vi")[0].setAttribute("data-intro", "你赶紧点啊");
+    document.getElementsByClassName("Fx4vi")[0].setAttribute("data-step", "2");
+    introJs().start();
+}, 3000);
+/**
 var isSettingShow = false;
 document.addEventListener('mousemove', function (event) {
     var target = event.target;
@@ -36,7 +42,7 @@ document.addEventListener('mousemove', function (event) {
       backgroundColor: target.style.backgroundColor,
       target: target,
     };
-    target.style.backgroundColor = '#000';
+    target.style.backgroundColor = '#555';
 });
 function createTemplate () {
     return `
@@ -60,11 +66,11 @@ function createTemplate () {
                             <div class="guide-plugin-popup-form-content">
                                 <textarea class="guide-plugin-popup-textarea"></textarea>
                             </div>
-                        </div>   
+                        </div>
                         <div class="guide-plugin-popup-form-item">
                             <input id="guide-plugin-popup-step-save" type="button" value="确定">
                             <input id="guide-plugin-popup-step-cancel" type="button" value="取消">
-                        </div>                 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,6 +92,8 @@ function initGuidePluginPopup () {
 }
 
 document.addEventListener('click', function (event) {
+    event.stopPropagation();
+    event.preventDefault();
     if (isSettingShow) {
         return;
     }
@@ -98,8 +106,9 @@ document.addEventListener('click', function (event) {
         document.body.innerHTML += html;
         initGuidePluginPopup();
     }
-});
 
+});
+**/
 
 /**function click(e) {
     console.log("set page color click");

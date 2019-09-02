@@ -9,10 +9,19 @@
   },
   "content_scripts": [{
     "matches": ["*://*/*"],
-    "js": ["contentScript.js"]
+    "js": [
+      "lib/jquery/jquery.min.js",
+      "lib/intro/intro.js",
+      "contentScript.js"
+    ],
+    "css": [
+      "css/contentScript.css",
+      "lib/intro/introjs.min.css"
+    ]
   }],
   "web_accessible_resources": [
-    "css/contentScript.css"
+    "lib/jquery/jquery.min.js",
+    "lib/intro/intro.js"
   ],
   "browser_action": {
     "default_title": "The best tool to teach your friends to operate a website step by step",
