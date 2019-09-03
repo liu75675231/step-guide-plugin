@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .popup-ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .popup-item {
+            width: max-content;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .popup-item:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <ul class="popup-ul">
+        <li id="create" class="popup-item">开始制作</li>
+        <li id="cancel" class="popup-item">取消制作</li>
+        <li id="save" class="popup-item">保存修改</li>
+    </ul>
+</body>
+<script src="popup.js"></script>
+</html>
