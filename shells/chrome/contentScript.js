@@ -1,3 +1,6 @@
+console.log('log');
+
+
 function getQueryObj () {
     var queries = {};
     var search = document.location.search;
@@ -158,9 +161,14 @@ function createGuide() {
         if (target.id) {
             selectorName = "#" + target.id;
         } else {
+
             selectorName = target.tagName;
             if (target.className) {
-                selectorName += '.' + target.className;
+                var targetClassNameArr = target.className.split(' ');
+                targetClassNameArr.forEach(function (elem) {
+                    elem = '.' + elem;
+                });
+                selectorName += '.' + targetClassNameArr.join(',');
             }
         }
 
