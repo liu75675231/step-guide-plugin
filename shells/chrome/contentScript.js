@@ -55,20 +55,27 @@ function saveGuide() {
     });
 }
 
+var prev = {
+    target: undefined,
+    backgroundColor: '',
+};
+var eventHandler = {
+    mouseMove: undefined,
+    click: undefined,
+};
 function cancelGuide() {
-    console.log('cancel');
+    document.removeEventListener('mousemove', eventHandler.mouseMove);
+    document.removeEventListener('click', eventHandler.click);
+    prev.target.style.backgroundColor = prev.backgroundColor;
 }
 let stepConfList = [];
 
 function createGuide() {
     console.log('create');
     var prevTarget = '';
-    var prev = {
-        target: undefined,
-        backgroundColor: '',
-    };
+
     var isSettingShow = false;
-    document.addEventListener('mousemove', function (event) {
+    eventHandler.mouseMove = function (event) {
         var target = event.target;
         if (target === prevTarget) {
             return;
@@ -87,7 +94,11 @@ function createGuide() {
             target: target,
         };
         target.style.backgroundColor = '#555';
-    });
+    }
+
+    document.addEventListener('mousemove', eventHandler.mouseMove);
+
+
     function createTemplate () {
         return `
         <div id="guide-plugin-popup">
@@ -149,8 +160,7 @@ function createGuide() {
         });
     }
 
-
-    document.addEventListener('click', function (event) {
+    eventHandler.click = function (event) {
         event.stopPropagation();
         event.preventDefault();
         if (isSettingShow) {
@@ -170,7 +180,19 @@ function createGuide() {
                 });
                 selectorName += '.' + targetClassNameArr.join(',');
             }
+            var $selectorList = $(selectorName);
+            if ($selectorList.length > 1) {
+                var curIndex = 0;
+                $selectorList.each(function (index, elem) {
+                    if (elem === event.target) {
+                        curIndex = index;
+                        return false;
+                    }
+                });
+                selectorName += ':eq(' + curIndex + ')';
+            }
         }
+
 
         curStepConf = {
             selector: selectorName,
@@ -187,7 +209,8 @@ function createGuide() {
             initGuidePluginPopup();
         }
 
-    });
+    }
+    document.addEventListener('click', eventHandler.click);
 }
 
 function generateConf () {
